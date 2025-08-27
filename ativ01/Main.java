@@ -17,6 +17,7 @@ public class Main {
         do {
             System.out.println("1 - Small graph (100 vertices)");
             System.out.println("2 - Big graph (50000 vertices)");
+            System.out.println("3 - Custom graph");
             System.out.println("0 - Exit");
             System.out.print("Choose an option: ");
             option = sc.nextInt();
@@ -26,6 +27,10 @@ public class Main {
                     break;
                 case 2:
                     fileName = "ativ01/graph-test-50000.txt";
+                    break;
+                case 3: 
+                    System.out.print("Write the name or path of the file: ");
+                    fileName = sc.next();
                     break;
                 case 0:
                     break;
